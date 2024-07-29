@@ -1,0 +1,50 @@
+.card-v2 {
+  position: relative;
+  min-height: 240px;
+  height: auto;
+  width: 470px;
+  border-radius: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: all 700ms ease-out;
+}
+
+.card-v2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 26, 255, 0) 0%,
+    rgba(0, 26, 255, 0.69) 67.22%
+  );
+}
+
+.card-v2:hover {
+  background-size: 110%;
+}
+
+.card-v2__body {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  max-width: 100%;
+  width: 260px;
+}
+
+.card-v2__params li {
+  width: 16px;
+  height: 16px;
+}
+
+.card-v2__title {
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
